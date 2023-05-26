@@ -5,7 +5,7 @@ import CustomButton from '../../../components/CustomButton'
 import { AiOutlineArrowRight } from "react-icons/ai"
 
 
-import keke from "../../../assets/vehicle/keke.png"
+// import keke from "../../../assets/vehicle/keke.png"
 import car from "../../../assets/vehicle/car.png"
 import SlideBox from '../../../components/SlideBox'
 
