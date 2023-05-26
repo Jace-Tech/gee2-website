@@ -47,7 +47,7 @@ const Header:React.FC<HeaderProps> = () => {
           </Stack>
 
           {/* LINK */}
-          <Stack direction={"row"} gap={3} alignItems={"center"} display={{ xs: "none", md: "flex" }} height={30}>
+          <Stack direction={"row"} gap={2} alignItems={"center"} display={{ xs: "none", md: "flex" }} height={30}>
             <Button sx={{ textTransform: "capitalize" }} color={"secondary"} variant='outlined'> Login </Button>
             <Button sx={{ textTransform: "capitalize", color: "white" }} color={"secondary"} variant='contained'> Register </Button>
           </Stack>
