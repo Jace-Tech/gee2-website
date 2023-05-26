@@ -20,7 +20,7 @@ const CustomButton:React.FC<CustomButtonProps> = ({ endIcon, children, title, st
       "&:hover": { 
         opacity: 1 
       }, 
-      borderRadius: .5, 
+      borderRadius: 1, 
       boxShadow: shadows[5],
       bgcolor: PRIMARY_COLOR, 
       color: "white", ...buttonProps 
