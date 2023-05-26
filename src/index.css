@@ -43,11 +43,11 @@ body {
 }
 
 .header-link:hover {
-  color: #3babe4;
+  color: #03045e;
 }
 
 .header-link.active {
-  color: #3babe4;
+  color: #03045e;
 }
 
 
@@ -64,4 +64,8 @@ body {
 
 .slide-box > * {
   animation: slideInUp .5s ease-in-out;
+}
+
+.wave-img {
+  width: 100%;
 }

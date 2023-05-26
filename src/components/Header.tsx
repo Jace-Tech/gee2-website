@@ -6,7 +6,7 @@ import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
 import logo from "../assets/logo.png"
 import Image from 'mui-image'
 import { navLinks } from '../contents/homeContent'
-import { SECONDARY_COLOR } from '../utils/colors'
+import { PRIMARY_COLOR } from '../utils/colors'
 import useBoolean from '../hooks/useBoolean'
 import { IoClose } from "react-icons/io5"
 
@@ -48,15 +48,15 @@ const Header:React.FC<HeaderProps> = () => {
 
           {/* LINK */}
           <Stack direction={"row"} gap={2} alignItems={"center"} display={{ xs: "none", md: "flex" }} height={30}>
-            <Button sx={{ textTransform: "capitalize" }} color={"secondary"} variant='outlined'> Login </Button>
-            <Button sx={{ textTransform: "capitalize", color: "white" }} color={"secondary"} variant='contained'> Register </Button>
+            <Button sx={{ textTransform: "capitalize" }} color={"primary"} variant='outlined'> Login </Button>
+            <Button sx={{ textTransform: "capitalize", color: "white" }} color={"primary"} variant='contained'> Register </Button>
           </Stack>
 
-          <IconButton onClick={open} sx={{ display: {xs: "flex", md: "none"}, width: 40, height: 40, borderRadius: 2, color: SECONDARY_COLOR }}>
+          <IconButton onClick={open} sx={{ display: {xs: "flex", md: "none"}, width: 40, height: 40, borderRadius: 2, color: PRIMARY_COLOR }}>
             <Stack alignItems={"flex-end"} gap={.7}>
-              <Box component={"span"} height={2} borderRadius={2} bgcolor={SECONDARY_COLOR} width={28}></Box>
-              <Box component={"span"} height={2} borderRadius={2} bgcolor={SECONDARY_COLOR} width={20}></Box>
-              <Box component={"span"} height={2} borderRadius={2} bgcolor={SECONDARY_COLOR} width={15}></Box>
+              <Box component={"span"} height={2} borderRadius={2} bgcolor={PRIMARY_COLOR} width={28}></Box>
+              <Box component={"span"} height={2} borderRadius={2} bgcolor={PRIMARY_COLOR} width={20}></Box>
+              <Box component={"span"} height={2} borderRadius={2} bgcolor={PRIMARY_COLOR} width={15}></Box>
             </Stack>
           </IconButton>
         </Stack>
@@ -78,8 +78,8 @@ const Header:React.FC<HeaderProps> = () => {
             { navLinks.map(item => <NavLinkItem key={item.name} {...item} isMobile />) }
           </List>
           <Stack gap={2} px={3}>
-            <Button sx={{ textTransform: "capitalize" }} size={"large"} color={"secondary"} variant='outlined'> Login </Button>
-            <Button sx={{ textTransform: "capitalize", color: "white" }} size={"large"} color={"secondary"} variant='contained'> Register </Button>
+            <Button sx={{ textTransform: "capitalize" }} size={"large"} color={"primary"} variant='outlined'> Login </Button>
+            <Button sx={{ textTransform: "capitalize", color: "white" }} size={"large"} color={"primary"} variant='contained'> Register </Button>
           </Stack>
         </Stack>
       </Drawer>
@@ -102,7 +102,7 @@ const NavLinkItem:React.FC<NavLinkItemProps> = ({ name, link, isMobile }) => {
 
   if(isMobile) return (
     <ListItem>
-      <ListItemButton onClick={() => navigate(link)} sx={{ color: isActiveLink? SECONDARY_COLOR : "#555" }}>
+      <ListItemButton onClick={() => navigate(link)} sx={{ color: isActiveLink? PRIMARY_COLOR : "#555" }}>
         <Typography fontWeight={500} fontSize={".95rem"}>{name}</Typography>
       </ListItemButton>
     </ListItem>

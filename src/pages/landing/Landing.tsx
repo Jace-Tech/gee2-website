@@ -11,6 +11,7 @@ const Landing:React.FC<LandingProps> = () => {
     <Box>
       <Header />
       <Hero />
+      
     </Box>
   )
 }
