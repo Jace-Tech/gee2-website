@@ -66,7 +66,7 @@ const Header:React.FC<HeaderProps> = () => {
         anchor={"right"}
         open={isOpen}
         onClose={close}
-        PaperProps={{sx: { width: "100%", maxWidth: 300 }}}
+        PaperProps={{sx: { width: "100%", maxWidth: 350 }}}
       >
         <Stack alignItems={"flex-end"} px={3} pt={2}>
           <IconButton onClick={close}>

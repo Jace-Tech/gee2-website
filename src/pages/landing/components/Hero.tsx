@@ -15,7 +15,7 @@ interface HeroProps { }
 
 const Hero: React.FC<HeroProps> = () => {
   return (
-    <Box component={"section"} py={[5, 8, 10]} position={"relative"} minHeight={"90vh"}>
+    <Box component={"section"} py={[6, 8, 12]} overflow={"hidden"} position={"relative"} minHeight={"85vh"}>
       <Container maxWidth={"lg"}>
         <Grid container spacing={[5, 5, 2]}>
           <Grid item xs={12} md={6}>
@@ -51,7 +51,7 @@ const Hero: React.FC<HeroProps> = () => {
           </Grid>
         </Grid>
       </Container>
-      <Box className="animate__animated animate__fadeInUp" display={{ xs: "none", sm: "block" }} position={"absolute"} bottom={0} left={0} width={"100%"}>
+      <Box className="animate__animated animate__fadeInUp" zIndex={-1} position={"absolute"} bottom={-10} left={-5} width={"110%"}>
         <img src={wave} className={"wave-img"} />
       </Box>
     </Box>
