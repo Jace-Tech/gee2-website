@@ -1,11 +1,9 @@
 import { Box, BoxProps, ButtonBase, Container, Grid, Stack, Typography } from '@mui/material'
 import React from 'react'
-import Image from 'mui-image'
 
 import rider from "../../../assets/rider.png"
 import phone from "../../../assets/phone.png"
 import wave from "../../../assets/wave-white.svg"
-import { PRIMARY_COLOR, SECONDARY_COLOR } from '../../../utils/colors'
 import { appSectionBg } from '../../../contents/homeContent'
 
 import playStore from "../../../assets/icons/android.png"

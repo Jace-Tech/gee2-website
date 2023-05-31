@@ -1,7 +1,7 @@
 import { Box, Container, Grid, Paper, Stack, Typography } from '@mui/material'
 import React from 'react'
-import bgImage from "../../../assets/pattern.jpg"
-import { PRIMARY_COLOR, SECONDARY_COLOR } from '../../../utils/colors'
+// import bgImage from "../../../assets/pattern.jpg"
+import { PRIMARY_COLOR } from '../../../utils/colors'
 import Image from 'mui-image'
 import { serviceContents } from '../../../contents/homeContent'
 
